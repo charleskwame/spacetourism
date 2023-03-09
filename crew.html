@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<!-- end of fonts -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Space Tourism</title>
+	</head>
+	<body class="bg-bodyDark-0 lg:overflow-hidden">
+		<img src="./assets/crew/background-crew-mobile.jpg" alt="" class="absolute -z-10 h-screen w-full md:hidden lg:hidden" id="mobileImage" />
+		<img src="./assets/crew/background-crew-tablet.jpg" alt="" class="absolute -z-10 hidden h-full w-full md:block lg:hidden" />
+		<img src="./assets/crew/background-crew-desktop.jpg" alt="" class="absolute -z-10 hidden w-full lg:block" />
+		<!-- header -->
+		<header class="flex items-center justify-between px-6 pt-5 md:px-0 md:pl-6">
+			<!-- logo -->
+			<a href="./index.html">
+				<img src="./assets/shared/logo.svg" alt="" class="w-8 md:w-10" />
+			</a>
+			<!-- mobile nav -->
+			<div class="absolute right-0 grid items-center gap-1 pr-6 md:hidden lg:hidden" id="menuContainer">
+				<div class="h-1 w-7 bg-white" id="stroke1"></div>
+				<div class="h-1 w-7 bg-white" id="stroke2"></div>
+				<div class="h-1 w-7 bg-white" id="stroke3"></div>
+			</div>
+			<!-- links -->
+			<!-- mobile -->
+			<div class="absolute top-0 right-0 z-[9] hidden h-full w-3/4 translate-x-0 bg-white bg-opacity-20 backdrop-blur-xl" id="mobileMenu">
+				<ul class="absolute z-10 grid gap-10 px-10 py-20 md:flex md:gap-10">
+					<li>
+						<!-- home -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>00</b>
+							<a href="./index.html">HOME</a>
+						</p>
+					</li>
+					<li>
+						<!-- destination -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>01</b>
+							<a href="./destination.html">DESTINATION</a>
+						</p>
+					</li>
+					<li>
+						<!-- crew -->
+						<p class="font-Barlow text-base text-white underline decoration-[4px] underline-offset-8">
+							<b>02</b>
+							<a href="./crew.html">CREW</a>
+						</p>
+					</li>
+					<li>
+						<!-- technology -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>03</b>
+							<a href="./technology.html">TECHNOLOGY</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="absolute right-[500px] hidden h-[2px] w-[500px] bg-white opacity-20 lg:block" />
+			<!-- tablets and desktop -->
+			<div class="hidden backdrop-blur-xl md:block">
+				<nav class="h-[100vh] bg-white bg-opacity-20 px-10 py-5 opacity-0 md:h-fit lg:px-20" id="desktopNav">
+					<ul class="grid gap-5 md:flex md:gap-10">
+						<li>
+							<!-- home -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>00</b>
+								<a href="./index.html"> HOME</a>
+							</p>
+						</li>
+						<li>
+							<!-- destination -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>01</b>
+								<a href="./destination.html" class="font-Barlow text-base text-white">DESTINATION</a>
+							</p>
+						</li>
+						<li>
+							<!-- crew -->
+							<p class="font-Barlow text-base text-white underline decoration-4 underline-offset-[20px]">
+								<b>02</b>
+								<a href="./crew.html" class="font-Barlow text-base text-white">CREW</a>
+							</p>
+						</li>
+						<li>
+							<!-- technology -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>03</b>
+								<a href="./technology.html" class="font-Barlow text-base text-white">TECHNOLOGY</a>
+							</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="mt-[40px] flex items-center justify-center gap-3 md:mt-[60px] md:justify-start md:pl-6 lg:pl-40">
+				<p class="font-Barlow text-base text-white opacity-20 md:text-xl lg:text-2xl">02</p>
+				<p class="font-Barlow text-base text-white md:text-xl lg:text-2xl">MEET YOUR CREW</p>
+			</div>
+
+			<!-- crew members -->
+			<section class="mt-[100px] grid items-center justify-center opacity-0 md:mt-[150px] md:flex md:flex-col-reverse lg:mt-0 lg:flex lg:flex-row-reverse lg:justify-around" id="crew">
+				<img src="./assets/crew/jessica watkins.jpg" alt="" class="mx-auto w-[177px] md:mx-0 md:w-[256px] lg:w-[356px]" id="commanderimg" />
+				<img src="./assets/crew/frank rubio.jpg" alt="" class="mx-auto hidden w-[177px] md:mx-0 md:w-[256px] lg:w-[356px]" id="specialistimg" />
+				<img src="./assets/crew/Loral O'hara.jpg" alt="" class="mx-auto hidden w-[177px] md:mx-0 md:w-[256px] lg:w-[356px]" id="pilotimg" />
+				<img src="./assets/crew/Johnny Kim.jpg" alt="" class="mx-auto hidden w-[177px] md:mx-0 md:w-[256px] lg:w-[356px]" id="flightengineerimg" />
+
+				<hr class="w-full bg-white opacity-20 md:hidden" />
+
+				<section class="mt-10 grid flex-col-reverse gap-10 md:mt-0 md:mb-10 md:flex lg:mb-0">
+					<div class="flex items-center justify-center gap-3 lg:justify-start">
+						<!-- indicators -->
+						<input type="radio" name="crew01" id="radiobtn1" class="h-3 w-3 cursor-pointer appearance-none rounded-full border-[1px] border-white accent-white checked:bg-white" />
+						<input type="radio" name="crew02" id="radiobtn2" class="h-3 w-3 cursor-pointer appearance-none rounded-full border-[1px] border-white accent-white checked:bg-white" />
+						<input type="radio" name="crew03" id="radiobtn3" class="h-3 w-3 cursor-pointer appearance-none rounded-full border-[1px] border-white accent-white checked:bg-white" />
+						<input type="radio" name="crew04" id="radiobtn4" class="h-3 w-3 cursor-pointer appearance-none rounded-full border-[1px] border-white accent-white checked:bg-white" />
+					</div>
+
+					<!-- information -->
+					<div>
+						<!-- commander -->
+						<div id="commanderLabel" class="grid gap-3">
+							<p class="text-center font-Bellefair text-white opacity-20 md:text-2xl lg:text-left lg:text-3xl">COMMANDER</p>
+							<p class="text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">JESSICA WATKINS</p>
+							<p class="max-w-xs text-center font-Barlow text-sm text-white md:max-w-sm md:text-base lg:text-left lg:text-lg">
+								Dr. Watkins conducted her graduate research on the emplacement mechanisms of large landslides on Mars and Earth. She has worked at NASA’s Ames Research Center and NASA’s Jet Propulsion Laboratory, and was a science team collaborator for NASA’s Mars Science Laboratory rover, Curiosity.
+							</p>
+						</div>
+
+						<!-- specialist -->
+						<div id="specialistLabel" class="grid hidden gap-3">
+							<p class="text-center font-Bellefair text-white opacity-20 md:text-2xl lg:text-left lg:text-3xl">MISSION SPECIALIST</p>
+							<p class="text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">FRANK RUBIO</p>
+							<p class="max-w-xs text-center font-Barlow text-sm text-white md:max-w-sm md:text-base lg:text-left lg:text-lg">
+								Rubio served as a platoon leader in A Company, 2-82nd Assault Aviation (REDHAWKS), and as a company commander in A Company, 2-3rd Aviation (STORM). Rubio also served as a clinic supervisor, an executive medicine provider and a flight surgeon at Redstone Arsenal, Alabama. At the time of his selection in June 2017
+							</p>
+						</div>
+
+						<!-- PILOT -->
+						<div id="pilotLabel" class="grid hidden gap-3">
+							<p class="text-center font-Bellefair text-white opacity-20 md:text-2xl lg:text-left lg:text-3xl">PILOT</p>
+							<p class="text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">LORAL O'HARA</p>
+							<p class="max-w-xs text-center font-Barlow text-sm text-white md:max-w-sm md:text-base lg:text-left lg:text-lg">
+								At the time of her selection in June 2017, O’Hara was a Research Engineer at Woods Hole Oceanographic Institution (WHOI) in Woods Hole, Massachusetts, where she spent eight years working on the engineering and operations of underwater vehicles such as the human-occupied research submersible Alvin and the remotely operated vehicle Jason.
+							</p>
+						</div>
+
+						<!-- flight engineer -->
+						<div id="flightengineerLabel" class="grid hidden gap-3">
+							<p class="text-center font-Bellefair text-white opacity-20 md:text-2xl lg:text-left lg:text-3xl">FLIGHT ENGINEER</p>
+							<p class="text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">JOHNNY KIM</p>
+							<p class="max-w-xs text-center font-Barlow text-sm text-white md:max-w-sm md:text-base lg:text-left lg:text-lg">
+								Kim was commissioned as a naval officer through an enlisted-to-officer program and earned his degree in mathematics at the University of San Diego and a doctorate of medicine at Harvard Medical School. Kim is a U.S. Navy SEAL and has completed more than 100 combat operations and is the recipient of the Silver Star and Bronze Star with Combat “V”.
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<script src="/node_modules/animejs/lib/anime.min.js"></script>
+		<script src="./crew.js"></script>
+	</body>
+</html>

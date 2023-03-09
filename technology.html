@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<!-- end of fonts -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Space Tourism</title>
+	</head>
+	<body class="bg-bodyDark-0 lg:overflow-hidden">
+		<img src="./assets/technology/background-technology-mobile.jpg" alt="" class="absolute -z-10 h-screen w-full md:hidden lg:hidden" id="mobileImage" />
+		<img src="./assets/technology/background-technology-tablet.jpg" alt="" class="absolute -z-10 hidden h-full w-full md:block lg:hidden" />
+		<img src="./assets/technology/background-technology-desktop.jpg" alt="" class="absolute -z-10 hidden w-full lg:block" />
+		<!-- header -->
+		<header class="flex items-center justify-between px-6 pt-5 md:px-0 md:pl-6">
+			<!-- logo -->
+			<a href="./index.html">
+				<img src="./assets/shared/logo.svg" alt="" class="w-8 md:w-10" />
+			</a>
+			<!-- mobile nav -->
+			<div class="absolute right-0 grid items-center gap-1 pr-6 md:hidden lg:hidden" id="menuContainer">
+				<div class="h-1 w-7 bg-white" id="stroke1"></div>
+				<div class="h-1 w-7 bg-white" id="stroke2"></div>
+				<div class="h-1 w-7 bg-white" id="stroke3"></div>
+			</div>
+			<!-- links -->
+			<!-- mobile -->
+			<div class="absolute top-0 right-0 z-[9] hidden h-full w-3/4 translate-x-0 bg-white bg-opacity-20 backdrop-blur-xl" id="mobileMenu">
+				<ul class="absolute z-10 grid gap-10 px-10 py-20 md:flex md:gap-10">
+					<li>
+						<!-- home -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>00</b>
+							<a href="./index.html">HOME</a>
+						</p>
+					</li>
+					<li>
+						<!-- destination -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>01</b>
+							<a href="./destination.html">DESTINATION</a>
+						</p>
+					</li>
+					<li>
+						<!-- crew -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>02</b>
+							<a href="./crew.html">CREW</a>
+						</p>
+					</li>
+					<li>
+						<!-- technology -->
+						<p class="font-Barlow text-base text-white underline decoration-[4px] underline-offset-8">
+							<b>03</b>
+							<a href="./technology.html">TECHNOLOGY</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="absolute right-[500px] hidden h-[2px] w-[500px] bg-white opacity-20 lg:block" />
+			<!-- tablets and desktop -->
+			<div class="hidden backdrop-blur-xl md:block">
+				<nav class="h-[100vh] bg-white bg-opacity-20 px-10 py-5 opacity-0 md:h-fit lg:px-20" id="desktopNav">
+					<ul class="grid gap-5 md:flex md:gap-10">
+						<li>
+							<!-- home -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>00</b>
+								<a href="./index.html"> HOME</a>
+							</p>
+							<!-- <div class="h-[2px] w-full bg-white"></div> -->
+						</li>
+						<li>
+							<!-- destination -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>01</b>
+								<a href="./destination.html" class="font-Barlow text-base text-white">DESTINATION</a>
+							</p>
+						</li>
+						<li>
+							<!-- crew -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>02</b>
+								<a href="./crew.html" class="font-Barlow text-base text-white">CREW</a>
+							</p>
+						</li>
+						<li>
+							<!-- technology -->
+							<p class="font-Barlow text-base text-white underline decoration-4 underline-offset-[20px]">
+								<b>03</b>
+								<a href="./technology.html" class="font-Barlow text-base text-white">TECHNOLOGY</a>
+							</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="mt-[40px] flex items-center justify-center gap-3 md:mt-[60px] md:justify-start md:pl-6 lg:pl-40">
+				<p class="font-Barlow text-base text-white opacity-20 md:text-xl lg:text-2xl">03</p>
+				<p class="font-Barlow text-base text-white md:text-xl lg:text-2xl">SPACE LAUNCH 101</p>
+			</div>
+
+			<!-- body for mobile -->
+			<section class="mt-5 grid items-center justify-center gap-5 opacity-0 md:mt-10 lg:mt-2 lg:hidden lg:justify-between lg:pl-40" id="bodyMobile">
+				<!-- images -->
+				<section class="lg:order-last">
+					<!-- mobile images -->
+					<img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="" class="mx-auto w-[100%]" id="launchvehicleimg" />
+					<img src="./assets/technology/image-spaceport-landscape.jpg" alt="" class="mx-auto hidden w-[100%]" id="spaceportimg" />
+					<img src="./assets/technology/image-space-capsule-landscape.jpg" alt="" class="mx-auto hidden w-[100%]" id="spacecapsuleimg" />
+				</section>
+
+				<!-- about -->
+				<section class="order-last mt-5 lg:order-none lg:mt-0">
+					<div id="launchvehicleLabel" class="">
+						<p class="mb-3 text-center font-Barlow text-sm text-white md:text-base lg:text-left">THE TERMINOLOGY...</p>
+						<p class="mb-5 text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">LAUNCH VEHICLE</p>
+						<p class="mx-auto max-w-sm text-center font-Barlow text-base text-white md:text-[18px] lg:text-left lg:text-[20px]">
+							A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+						</p>
+					</div>
+
+					<div id="spaceportLabel" class="hidden">
+						<p class="mb-3 text-center font-Barlow text-sm text-white md:text-base lg:text-left">THE TERMINOLOGY...</p>
+						<p class="mb-5 text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">SPACE PORT</p>
+						<p class="mx-auto max-w-sm text-center font-Barlow text-base text-white md:text-[18px] lg:text-left lg:text-[20px]">A spaceport or Cosmo drome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+					</div>
+
+					<div id="spacecapsuleLabel" class="hidden">
+						<p class="mb-3 text-center font-Barlow text-sm text-white md:text-base lg:text-left">THE TERMINOLOGY...</p>
+						<p class="mb-5 text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">SPACE CAPSULE</p>
+						<p class="mx-auto max-w-sm text-center font-Barlow text-base text-white md:text-[18px] lg:text-left lg:text-[20px]">
+							A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+						</p>
+					</div>
+				</section>
+
+				<!-- buttons -->
+				<section class="mt-5 flex justify-center gap-4 lg:order-first lg:mt-0 lg:flex-col lg:gap-8">
+					<button class="h-10 w-10 rounded-full border-[1px] bg-white text-center font-Bellefair leading-10 md:h-14 md:w-14 md:text-lg md:leading-[62px] lg:text-xl" id="launchvehiclebtn">1</button>
+					<button class="h-10 w-10 rounded-full border-[1px] text-center font-Bellefair leading-10 text-white hover:bg-white hover:text-black md:h-14 md:w-14 md:text-lg md:leading-[62px] lg:text-xl" id="spaceportbtn">2</button>
+					<button class="h-10 w-10 rounded-full border-[1px] text-center font-Bellefair leading-10 text-white hover:bg-white hover:text-black md:h-14 md:w-14 md:text-lg md:leading-[62px] lg:text-xl" id="spacecapsulebtn">3</button>
+				</section>
+			</section>
+
+			<!-- body for desktop -->
+			<section class="hidden items-center justify-center gap-5 opacity-0 lg:mt-2 lg:flex lg:justify-between lg:pl-40" id="bodyDesktop">
+				<!-- images -->
+				<section class="lg:order-last">
+					<!-- desktop images -->
+					<img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="w-[90%]" id="launchvehicleimgDesktop" />
+					<img src="./assets/technology/image-spaceport-portrait.jpg" alt="" class="hidden w-[90%]" id="spaceportimgDesktop" />
+					<img src="./assets/technology/image-space-capsule-portrait.jpg" alt="" class="hidden w-[90%]" id="spacecapsuleimgDesktop" />
+				</section>
+
+				<!-- about for desktop -->
+				<section class="order-last mt-5 lg:order-none lg:mt-0">
+					<div id="launchvehicleLabelDesktop" class="">
+						<p class="mb-3 text-center font-Barlow text-sm text-white md:text-base lg:text-left">THE TERMINOLOGY...</p>
+						<p class="mb-5 text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">LAUNCH VEHICLE</p>
+						<p class="mx-auto max-w-sm text-center font-Barlow text-base text-white md:text-[18px] lg:text-left lg:text-[20px]">
+							A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+						</p>
+					</div>
+
+					<div id="spaceportLabelDesktop" class="hidden">
+						<p class="mb-3 text-center font-Barlow text-sm text-white md:text-base lg:text-left">THE TERMINOLOGY...</p>
+						<p class="mb-5 text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">SPACE PORT</p>
+						<p class="mx-auto max-w-sm text-center font-Barlow text-base text-white md:text-[18px] lg:text-left lg:text-[20px]">A spaceport or Cosmo drome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+					</div>
+
+					<div id="spacecapsuleLabelDesktop" class="hidden">
+						<p class="mb-3 text-center font-Barlow text-sm text-white md:text-base lg:text-left">THE TERMINOLOGY...</p>
+						<p class="mb-5 text-center font-Bellefair text-2xl text-white md:text-4xl lg:text-left lg:text-5xl">SPACE CAPSULE</p>
+						<p class="mx-auto max-w-sm text-center font-Barlow text-base text-white md:text-[18px] lg:text-left lg:text-[20px]">
+							A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+						</p>
+					</div>
+				</section>
+
+				<!-- buttons for desktop-->
+				<section class="mt-5 flex justify-center gap-4 lg:order-first lg:mt-0 lg:flex-col lg:gap-8">
+					<button class="h-10 w-10 rounded-full border-[1px] bg-white text-center font-Bellefair leading-10 md:h-14 md:w-14 md:text-lg md:leading-[62px] lg:text-xl" id="launchvehiclebtnDesktop">1</button>
+					<button class="h-10 w-10 rounded-full border-[1px] text-center font-Bellefair leading-10 text-white md:h-14 md:w-14 md:text-lg md:leading-[62px] lg:text-xl" id="spaceportbtnDesktop">2</button>
+					<button class="h-10 w-10 rounded-full border-[1px] text-center font-Bellefair leading-10 text-white md:h-14 md:w-14 md:text-lg md:leading-[62px] lg:text-xl" id="spacecapsulebtnDesktop">3</button>
+				</section>
+			</section>
+		</main>
+
+		<script src="/node_modules/animejs/lib/anime.min.js"></script>
+		<script src="./technology.js"></script>
+	</body>
+</html>

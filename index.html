@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<!-- end of fonts -->
+		<!-- link preview -->
+		<meta property="og:title" content="Space Tourism" />
+		<meta property="og:description" content="A space agency that leads the frontier in space travel" />
+		<meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F8%2F9%2F9%2F64225.jpg&f=1&nofb=1&ipt=e5ed21f2f99219a84a60e75cb1eff7e5a7ca44797a186986e1c437b85b5fbad3&ipo=images" />
+		<meta property="og:url" content="URL of your website" />
+		<!-- end of link preview -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Space Tourism</title>
+	</head>
+	<body class="bg-bodyDark-0 lg:overflow-hidden">
+		<img src="./assets/home/background-home-mobile.jpg" alt="" class="absolute -z-10 h-screen w-full md:hidden lg:hidden" id="mobileImage" />
+		<img src="./assets/home/background-home-tablet.jpg" alt="" class="absolute -z-10 hidden h-full w-full md:block lg:hidden" />
+		<img src="./assets/home/background-home-desktop.jpg" alt="" class="absolute -z-10 hidden w-full lg:block" />
+		<!-- header -->
+		<header class="flex items-center justify-between px-6 pt-5 md:px-0 md:pl-6">
+			<!-- logo -->
+			<a href="./index.html">
+				<img src="./assets/shared/logo.svg" alt="" class="w-8 md:w-10" />
+			</a>
+			<!-- mobile nav -->
+			<div class="absolute right-0 grid items-center gap-1 pr-6 md:hidden lg:hidden" id="menuContainer">
+				<div class="h-1 w-7 bg-white" id="stroke1"></div>
+				<div class="h-1 w-7 bg-white" id="stroke2"></div>
+				<div class="h-1 w-7 bg-white" id="stroke3"></div>
+			</div>
+			<!-- links -->
+			<!-- mobile -->
+			<div class="absolute top-0 right-0 z-[9] hidden h-full w-3/4 translate-x-0 bg-white bg-opacity-20 backdrop-blur-xl" id="mobileMenu">
+				<ul class="absolute z-10 grid gap-10 px-10 py-20 md:flex md:gap-10">
+					<li>
+						<!-- home -->
+						<p class="font-Barlow text-base text-white underline decoration-[4px] underline-offset-8">
+							<b>00</b>
+							<a href="./index.html">HOME</a>
+						</p>
+					</li>
+					<li>
+						<!-- destination -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>01</b>
+							<a href="./destination.html">DESTINATION</a>
+						</p>
+					</li>
+					<li>
+						<!-- crew -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>02</b>
+							<a href="./crew.html">CREW</a>
+						</p>
+					</li>
+					<li>
+						<!-- technology -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>03</b>
+							<a href="./technology.html">TECHNOLOGY</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="absolute right-[500px] hidden h-[2px] w-[500px] bg-white opacity-20 lg:block" />
+			<!-- tablets and desktop -->
+			<div class="hidden backdrop-blur-xl md:block">
+				<nav class="h-[100vh] bg-white bg-opacity-20 px-10 py-5 opacity-0 md:h-fit lg:px-20" id="desktopNav">
+					<ul class="grid gap-5 md:flex md:gap-10">
+						<li>
+							<!-- home -->
+							<p class="font-Barlow text-base text-white underline decoration-4 underline-offset-[20px]">
+								<b>00</b>
+								<a href="./index.html"> HOME</a>
+							</p>
+							<!-- <div class="h-[2px] w-full bg-white"></div> -->
+						</li>
+						<li>
+							<!-- destination -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>01</b>
+								<a href="./destination.html" class="font-Barlow text-base text-white">DESTINATION</a>
+							</p>
+						</li>
+						<li>
+							<!-- crew -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>02</b>
+								<a href="./crew.html" class="font-Barlow text-base text-white">CREW</a>
+							</p>
+						</li>
+						<li>
+							<!-- technology -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>03</b>
+								<a href="./technology.html" class="font-Barlow text-base text-white">TECHNOLOGY</a>
+							</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="mt-10 items-center justify-around opacity-0 md:mt-20 lg:flex lg:justify-evenly" id="main">
+			<section class="mx-auto grid max-w-xs items-center justify-center text-center md:max-w-sm lg:max-w-lg lg:items-start lg:justify-start lg:text-left">
+				<h5 class="font-Barlow text-white md:text-xl lg:text-[28px]">SO, YOU WANT TO TRAVEL TO</h5>
+				<h1 class="font-Bellefair text-[80px] text-white md:text-[150px]" id="spaceText">SPACE</h1>
+				<p class="md:text-md font-Barlow text-white lg:text-lg">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+			</section>
+
+			<button class="mx-auto mt-20 block animate-[bounce_5s_linear_infinite] rounded-full bg-white px-5 py-12 font-Bellefair text-xl md:mt-40 md:px-12 md:py-24 md:text-3xl lg:mt-0"><a href="./destination.html">EXPLORE</a></button>
+		</main>
+
+		<script src="/node_modules/animejs/lib/anime.min.js"></script>
+		<script src="./home.js"></script>
+	</body>
+</html>

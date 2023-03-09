@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<!-- end of fonts -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Space Tourism</title>
+	</head>
+	<body class="lg:overflow-hidden">
+		<img src="./assets/destination/background-destination-mobile.jpg" alt="" class="absolute -z-10 h-screen w-full md:hidden lg:hidden" id="mobileImage" />
+		<img src="./assets/destination/background-destination-tablet.jpg" alt="" class="absolute -z-10 hidden h-full w-full md:block lg:hidden" />
+		<img src="./assets/destination/background-destination-desktop.jpg" alt="" class="absolute -z-10 hidden w-full lg:block" />
+		<!-- header -->
+		<header class="flex items-center justify-between px-6 pt-5 md:px-0 md:pl-6">
+			<!-- logo -->
+			<a href="./index.html">
+				<img src="./assets/shared/logo.svg" alt="" class="w-8 md:w-10" />
+			</a>
+			<!-- mobile nav -->
+			<div class="absolute right-0 grid items-center gap-1 pr-6 md:hidden lg:hidden" id="menuContainer">
+				<div class="h-1 w-7 bg-white" id="stroke1"></div>
+				<div class="h-1 w-7 bg-white" id="stroke2"></div>
+				<div class="h-1 w-7 bg-white" id="stroke3"></div>
+			</div>
+			<!-- links -->
+			<!-- mobile -->
+			<div class="absolute top-0 right-0 z-[9] hidden h-full w-3/4 translate-x-0 bg-white bg-opacity-20 backdrop-blur-xl" id="mobileMenu">
+				<ul class="absolute z-10 grid gap-10 px-10 py-20 md:flex md:gap-10">
+					<li>
+						<!-- home -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>00</b>
+							<a href="./index.html">HOME</a>
+						</p>
+					</li>
+					<li>
+						<!-- destination -->
+						<p class="font-Barlow text-base text-white underline decoration-[4px] underline-offset-8">
+							<b>01</b>
+							<a href="./destination.html">DESTINATION</a>
+						</p>
+					</li>
+					<li>
+						<!-- crew -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>02</b>
+							<a href="./crew.html">CREW</a>
+						</p>
+					</li>
+					<li>
+						<!-- technology -->
+						<p class="font-Barlow text-base text-white decoration-[4px] underline-offset-8 hover:underline">
+							<b>03</b>
+							<a href="./technology.html">TECHNOLOGY</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="absolute right-[500px] hidden h-[2px] w-[500px] bg-white opacity-20 lg:block" />
+			<!-- tablets and desktop -->
+			<div class="hidden backdrop-blur-xl md:block">
+				<nav class="h-[100vh] bg-white bg-opacity-20 px-10 py-5 opacity-0 md:h-fit lg:px-20" id="desktopNav">
+					<ul class="grid gap-5 md:flex md:gap-10">
+						<li>
+							<!-- home -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>00</b>
+								<a href="./index.html"> HOME</a>
+							</p>
+						</li>
+						<li>
+							<!-- destination -->
+							<p class="font-Barlow text-base text-white underline decoration-4 underline-offset-[20px]">
+								<b>01</b>
+								<a href="./destination.html" class="font-Barlow text-base text-white">DESTINATION</a>
+							</p>
+						</li>
+						<li>
+							<!-- crew -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>02</b>
+								<a href="./crew.html" class="font-Barlow text-base text-white">CREW</a>
+							</p>
+						</li>
+						<li>
+							<!-- technology -->
+							<p class="font-Barlow text-base text-white decoration-4 underline-offset-[20px] hover:underline">
+								<b>03</b>
+								<a href="./technology.html" class="font-Barlow text-base text-white">TECHNOLOGY</a>
+							</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main" class="">
+			<section>
+				<section class="">
+					<div class="mt-[40px] flex items-center justify-center gap-3 md:mt-[60px] md:justify-start md:pl-6 lg:pl-40">
+						<p class="font-Barlow text-base text-white opacity-20 md:text-xl lg:text-2xl">01</p>
+						<p class="font-Barlow text-base text-white md:text-xl lg:text-2xl">PICK YOUR DESTINATION</p>
+					</div>
+
+					<!-- moon -->
+					<div class="" id="moonSection">
+						<div class="items-center justify-around lg:flex">
+							<!-- various images -->
+							<!-- moon -->
+							<div class="animate-[spin_20s_linear_infinite]" id="moonImg">
+								<img src="./assets/destination/image-moon.png" alt="" class="mx-auto mt-8 block w-[170px] md:mt-14 md:w-[300px] lg:mx-0 lg:w-[400px]" />
+							</div>
+							<!-- mars -->
+							<div class="hidden animate-[spin_5s_linear_infinite]" id="marsImg">
+								<img src="./assets/destination/image-mars.png" alt="" class="mx-auto mt-8 block w-[170px] md:mt-14 md:w-[300px] lg:mx-0 lg:w-[400px]" />
+							</div>
+							<!-- europa -->
+							<div class="hidden animate-[spin_2s_linear_infinite]" id="europaImg">
+								<img src="./assets/destination/image-europa.png" alt="" class="mx-auto mt-8 block w-[170px] md:mt-14 md:w-[300px] lg:mx-0 lg:w-[400px]" />
+							</div>
+							<!-- titan -->
+							<div class="hidden animate-[spin_1s_linear_infinite]" id="titanImg">
+								<img src="./assets/destination/image-titan.png" alt="" class="mx-auto mt-8 block w-[170px] md:mt-14 md:w-[300px] lg:mx-0 lg:w-[400px]" />
+							</div>
+							<section class="">
+								<!-- links for destinations -->
+								<section class="mt-7 flex items-center justify-center gap-5 md:mt-12 lg:mt-0 lg:justify-start">
+									<a href="#" class="font-Barlow text-sm text-white decoration-4 underline-offset-[10px] opacity-50 hover:underline hover:opacity-100 md:text-base lg:text-lg" id="moonLink">MOON</a>
+									<a href="#" class="font-Barlow text-sm text-white decoration-4 underline-offset-[10px] opacity-50 hover:underline hover:opacity-100 md:text-base lg:text-lg" id="marsLink">MARS</a>
+									<a href="#" class="font-Barlow text-sm text-white decoration-4 underline-offset-[10px] opacity-50 hover:underline hover:opacity-100 md:text-base lg:text-lg" id="europaLink">EUROPA</a>
+									<a href="#" class="font-Barlow text-sm text-white decoration-4 underline-offset-[10px] opacity-50 hover:underline hover:opacity-100 md:text-base lg:text-lg" id="titanLink">TITAN</a>
+								</section>
+
+								<!-- about the planets -->
+								<section class="mx-auto mt-5 max-w-sm md:mt-8 lg:mx-0 lg:mt-9 lg:max-w-md">
+									<div class="" id="moonLabel">
+										<p class="text-center font-Bellefair text-5xl text-white md:text-7xl lg:text-left lg:text-8xl">MOON</p>
+										<p class="mt-5 text-center font-Barlow text-white lg:text-justify">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+									</div>
+
+									<div class="hidden" id="marsLabel">
+										<p class="text-center font-Bellefair text-5xl text-white md:text-7xl lg:text-left lg:text-8xl">MARS</p>
+										<p class="mt-5 text-center font-Barlow text-white lg:text-justify">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+									</div>
+
+									<div class="hidden" id="europaLabel">
+										<p class="text-center font-Bellefair text-5xl text-white md:text-7xl lg:text-left lg:text-8xl">EUROPA</p>
+										<p class="mt-5 text-center font-Barlow text-white lg:text-justify">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+									</div>
+
+									<div class="hidden" id="titanLabel">
+										<p class="text-center font-Bellefair text-5xl text-white md:text-7xl lg:text-left lg:text-8xl">TITAN</p>
+										<p class="mt-5 text-center font-Barlow text-white lg:text-justify">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+									</div>
+								</section>
+
+								<hr class="mx-auto mt-8 h-[2px] w-96 bg-white opacity-20 lg:w-full" />
+
+								<section class="grid items-center justify-center gap-0 md:flex md:gap-10 lg:justify-start">
+									<!-- distance -->
+									<!-- moon -->
+									<div class="" id="moonDistance">
+										<!-- distance and time -->
+										<div class="flex items-center justify-center gap-10 lg:justify-start">
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">AVG DISTANCE</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">384,400 KM</p>
+											</div>
+
+											<!-- est travel time -->
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">EST. TRAVEL TIME</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">3 DAYS</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- mars -->
+									<div class="hidden" id="marsDistance">
+										<!-- distance and time -->
+										<div class="flex items-center justify-center gap-10 lg:justify-start">
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">AVG DISTANCE</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">225 MIL. KM</p>
+											</div>
+
+											<!-- est travel time -->
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">EST. TRAVEL TIME</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">9 MONTHS</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- europa -->
+									<div class="hidden" id="europaDistance">
+										<!-- distance and time -->
+										<div class="flex items-center justify-center gap-10 lg:justify-start">
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">AVG DISTANCE</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">628 MIL. KM</p>
+											</div>
+
+											<!-- est travel time -->
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">EST. TRAVEL TIME</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">3 YEARS</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- titan -->
+									<div class="hidden" id="titanDistance">
+										<!-- distance and time -->
+										<div class="flex items-center justify-center gap-10 lg:justify-start">
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">AVG DISTANCE</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">1.6 BIL. KM</p>
+											</div>
+
+											<!-- est travel time -->
+											<div class="mt-5">
+												<p class="font-Barlow text-sm text-white opacity-50 md:text-base">EST. TRAVEL TIME</p>
+												<p class="font-Bellefair text-2xl text-white md:text-3xl">7 YEARS</p>
+											</div>
+										</div>
+									</div>
+								</section>
+							</section>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+	</body>
+	<script src="/node_modules/animejs/lib/anime.min.js"></script>
+	<script src="./destination.js"></script>
+</html>
